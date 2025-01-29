@@ -1,0 +1,52 @@
+site_name: POPout  
+repo_url: https://github.com/tadesouaiaia/POPout-website
+site_author:  Tade Souaiaia 
+nav:
+    - Home: index.md
+    
+    - Requirements:
+        - System:             req_system.md 
+        - Python3:            req_python.md 
+        - R:                  req_r.md 
+
+    - Quick start tutorial:
+        - Example Run:        quikstart_demo.md 
+        - Output Files:       quikstart_result.md 
+
+    - Guide:
+        - Background:           guide_background.md
+        - Input Data:           guide_input.md
+        - Output Data:          guide_output.md 
+        - Options:              guide_options.md
+
+    - Misc:
+        - Frequently Asked Questions: misc_faq.md
+
+
+
+theme:
+    name: readthedocs 
+extra_css: [css/extra.css]
+#palette: 
+#accent: deep orange
+#highlightjs: false
+
+markdown_extensions:
+    - admonition
+    - attr_list
+    - pymdownx.details
+    - pymdownx.tabbed
+    - pymdownx.superfences
+    - pymdownx.highlight:
+        use_pygments: true
+        noclasses: true
+    - pymdownx.arithmatex:
+        generic: True
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.caret
+
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+  - javascripts/details.js
+
