@@ -63,7 +63,7 @@ distribution.
 
 
 
-!!! Warning "Citation: Our Manuscript is under review in Nature" 
+!!! Warning "Citation: Our manuscript is currently under review" 
     Please cite our [preprint](https://pubmed.ncbi.nlm.nih.gov/39605697/): 
 
     Souaiaia, Tade et al. “Striking Departures from Polygenic Architecture in the Tails of Complex Traits.” bioRxiv : the preprint server for biology 2024.11.18.624155. 20 Nov. 2024, doi:10.1101/2024.11.18.624155. Preprint.
