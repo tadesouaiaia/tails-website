@@ -7,7 +7,7 @@ h1 {
 }
 
 .wy-side-nav-search {
-    background: red;
+    background: blue;
 }
 
 .wy-nav-side {
@@ -15,13 +15,13 @@ h1 {
 }
 
 .rst-versions .rst-current-version {
-    background: red;
+    background: deepskyblue;
 }
 
 .wy-nav-content {
     max-width: 1200px !important;
     max-width: 1300px !important;
-    max-width: 80% !important;
+    max-width: 60% !important;
 }
 
 

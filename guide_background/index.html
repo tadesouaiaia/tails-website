@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Tade Souaiaia" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Background - POPout</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Background";
+        var mkdocs_page_input_path = "guide_background.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> POPout
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Requirements</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../req_system/">System</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../req_python/">Python3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../req_r/">R</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Quick start tutorial</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../quikstart_demo/">Example Run</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../quikstart_result/">Output Files</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Background</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../guide_input/">Input Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../guide_output/">Output Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../guide_options/">Options</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Misc</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../misc_faq/">Frequently Asked Questions</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">POPout</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Guide</li>
+      <li class="breadcrumb-item active">Background</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/tadesouaiaia/POPout-website/edit/master/docs/guide_background.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p><img alt="Screenshot" src="img/slim/guide_logo1.png" /></p>
+<h1 id="background">Background</h1>
+<p>PRS methods require as input summary statistics from genome wide association
+studies. If unfamiliar with GWAS or in need of a refresher consider reading
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/29484742">this paper</a>.</p>
+<ul>
+<li>Genome-wide association studies (GWAS) involve analyzing the genomes
+  of a large group of individuals.  </li>
+<li>For a binary trait (like blue or brown eyes) this involves comparing
+the frequency of genetic variations in each group to produce an
+odds-ratio (measure of association) and a p-value to measure the
+signficance of the realtionship at each SNP.</li>
+<li>For continuous measures (like height) this results in an effect size (measure of continuous association) 
+  and p-value that measure the significance of our relationship.   </li>
+<li>GWAS results can be summarized in a sumstats file which looks like this:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">CHR</th>
+<th style="text-align: center;">ID</th>
+<th style="text-align: center;">REF</th>
+<th style="text-align: center;">A1</th>
+<th style="text-align: center;">A1_FREQ</th>
+<th style="text-align: center;">OBS_CT</th>
+<th style="text-align: center;">SE</th>
+<th style="text-align: center;">BETA</th>
+<th style="text-align: center;">P</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">rs100</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">0.1</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">0.01</td>
+<td style="text-align: center;">1.10</td>
+<td style="text-align: center;">0.01</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">rs200</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">G</td>
+<td style="text-align: center;">0.2</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">0.02</td>
+<td style="text-align: center;">-1.10</td>
+<td style="text-align: center;">0.05</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">rs300</td>
+<td style="text-align: center;">G</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">0.3</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">0.03</td>
+<td style="text-align: center;">1.02</td>
+<td style="text-align: center;">0.10</td>
+</tr>
+</tbody>
+</table>
+<h1 id="prs-basics">PRS basics</h1>
+<ul>
+<li>Polygenic scores combine genetic variant associations genome-wide by 
+  summing their effects to produce individual scores that predict the phenotype.   </li>
+<li>Different PRS methods use different statistical methods to select
+  variants and estimate their effect sizes for use in the PRS.</li>
+<li>BridgePRS, like many other PRS methods, requires genotype and
+  phenotype data from individuals (several hundred samples) in
+  addition to GWAS summary statistics to estimate the PRS. </li>
+<li>The predictive power of PRS is assessed in genotype and phenotype
+  data from unseen samples. BridgePRS reports PRS accuracy by the
+  residual variance explained <span class="arithmatex">\(R^2\)</span> (accounting for the variance
+  explained by the non-genetic covariates included in the model). For
+  binary traits Nagelkerke <span class="arithmatex">\(R^2\)</span> is used.</li>
+</ul>
+<h1 id="popout">POPout</h1>
+<p>Explain what it is. </p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../quikstart_result/" class="btn btn-neutral float-left" title="Output Files"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../guide_input/" class="btn btn-neutral float-right" title="Input Data">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/tadesouaiaia/POPout-website" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../quikstart_result/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../guide_input/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      <script src="../javascripts/details.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
