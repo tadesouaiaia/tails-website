@@ -1,4 +1,3 @@
-![Screenshot](img/slim/guide_logo2.png) 
 # Input Data
 
 
@@ -6,11 +5,11 @@
 ## POP Files 
 
 
-## File Specifications 
+The POP (PRS on Phenotype) file specification simply requires two columns of whitespace or comma-separated 
+data where the first column contains PRS values and the second the corresponding Phenotype values.  Note that the 
+header is optional for our Python scripts but required by R: 
 
-A POP file is simple: 
-
-Phenotype|Prs|
+PRS|Phenotype|
 |:-:|:-:|
 -2.2|-1.5|
 -1.3|-0.4|
@@ -22,25 +21,17 @@ Phenotype|Prs|
 
 
 
-
-
-
-## Creating a POP File: 
-
+If you have PRS and Phenotype data with sample IDs in the first column then you can create a POP file 
+using our Python script as shown with example data: 
 
 !!! tip "Creating a POP File"
-    The following command will validate the command line data and create a target configuration file 
+    The following command will create POP file named my_file.pop. 
     ```
-    ./POPout.py --createPopFile --prs data/prs.toy --pheno data/pheno.toy 
-
+    ./POPout.py --makePOPfile data/TEST.prs data/TEST.pheno -o my_file
 
     ```
     
 
-This command will create a POPout File 
-
-
----
 
 
 

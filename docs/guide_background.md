@@ -1,4 +1,5 @@
-![Screenshot](img/slim/guide_logo1.png)
+
+![Screenshot](img/pop_wide.jpg)
 
 
 
@@ -29,25 +30,26 @@ CHR|ID|REF|A1|A1_FREQ|OBS_CT|SE|BETA|P|
 
 
 
-# PRS basics
+# PRS
 
 - Polygenic scores combine genetic variant associations genome-wide by 
   summing their effects to produce individual scores that predict the phenotype.   
 - Different PRS methods use different statistical methods to select
   variants and estimate their effect sizes for use in the PRS.
-- BridgePRS, like many other PRS methods, requires genotype and
-  phenotype data from individuals (several hundred samples) in
-  addition to GWAS summary statistics to estimate the PRS. 
-- The predictive power of PRS is assessed in genotype and phenotype
-  data from unseen samples. BridgePRS reports PRS accuracy by the
-  residual variance explained $R^2$ (accounting for the variance
-  explained by the non-genetic covariates included in the model). For
-  binary traits Nagelkerke $R^2$ is used.
+- The predictive power of PRS is usually assesed by residual variance explained 
+  $R^2$ or other similar metrics. 
 
 
 # POPout 
 
-Explain what it is. 
+- When genetic architecture is complex predictive performance can vary across the 
+trait distribution which can make global metrics like $R^2$ inaccurate at certain strata. 
+- Specifically when large rare variants are present in one tail of the trait distribtion we  
+  often see performance loss or "POPout" whereby individuals with very high or low trait 
+  values do not have correspondingly high or low PRS values. 
+- POPout quantifies and assesses the prescence of this phenonomena. 
+
+
 
 
 

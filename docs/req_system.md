@@ -16,9 +16,9 @@ and unzipping POPout a directory with the following contents will be created:
      README.me 
 
 
-Verify that the following files have been downloaded and then confirm that the 
-the necessary Python3 or R libraries and dependencies are installed for and available 
-by following the instructions for [Python3](req_python.md) or [R](req_r.md). 
+Please verify that the following files have been downloaded and unzipped into a suitable directory. 
+Next please confirm that the the necessary Python3 or R libraries and dependencies are installed 
+and available by following the instructions for [Python3](req_python.md) or [R](req_r.md). 
 
 
 
