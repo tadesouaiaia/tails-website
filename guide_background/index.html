@@ -103,7 +103,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p><img alt="Screenshot" src="img/slim/guide_logo1.png" /></p>
+                <p><img alt="Screenshot" src="../img/pop_wide.jpg" /></p>
 <h1 id="background">Background</h1>
 <p>PRS methods require as input summary statistics from genome wide association
 studies. If unfamiliar with GWAS or in need of a refresher consider reading
@@ -169,23 +169,24 @@ signficance of the realtionship at each SNP.</li>
 </tr>
 </tbody>
 </table>
-<h1 id="prs-basics">PRS basics</h1>
+<h1 id="prs">PRS</h1>
 <ul>
 <li>Polygenic scores combine genetic variant associations genome-wide by 
   summing their effects to produce individual scores that predict the phenotype.   </li>
 <li>Different PRS methods use different statistical methods to select
   variants and estimate their effect sizes for use in the PRS.</li>
-<li>BridgePRS, like many other PRS methods, requires genotype and
-  phenotype data from individuals (several hundred samples) in
-  addition to GWAS summary statistics to estimate the PRS. </li>
-<li>The predictive power of PRS is assessed in genotype and phenotype
-  data from unseen samples. BridgePRS reports PRS accuracy by the
-  residual variance explained <span class="arithmatex">\(R^2\)</span> (accounting for the variance
-  explained by the non-genetic covariates included in the model). For
-  binary traits Nagelkerke <span class="arithmatex">\(R^2\)</span> is used.</li>
+<li>The predictive power of PRS is usually assesed by residual variance explained 
+  <span class="arithmatex">\(R^2\)</span> or other similar metrics. </li>
 </ul>
 <h1 id="popout">POPout</h1>
-<p>Explain what it is. </p>
+<ul>
+<li>When genetic architecture is complex predictive performance can vary across the 
+trait distribution which can make global metrics like <span class="arithmatex">\(R^2\)</span> inaccurate at certain strata. </li>
+<li>Specifically when large rare variants are present in one tail of the trait distribtion we<br />
+  often see performance loss or "POPout" whereby individuals with very high or low trait 
+  values do not have correspondingly high or low PRS values. </li>
+<li>POPout quantifies and assesses the prescence of this phenonomena. </li>
+</ul>
               
             </div>
           </div><footer>

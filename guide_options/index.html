@@ -70,6 +70,16 @@
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="./">Options</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_1"></a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#names-names">Names (--names)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#output-prefix-out">Output Prefix (--out)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#plot-format-plotformat">Plot Format (--plotFormat)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tail-size-tailsize">Tail Size (--tailSize)</a>
+    </li>
     </ul>
                   </li>
               </ul>
@@ -103,8 +113,31 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p><img alt="Screenshot" src="img/slim/guide_logo4.png" /> </p>
-<h1 id="commands">Commands</h1>
+                <h1 id="commands">Commands</h1>
+<p>POPout can be run using our Python script with the following command: </p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>./POPout.py trait1.pop trait2.pop.... 
+</code></pre></div>
+<p>The following commands are supported: </p>
+<h2 id="_1"></h2>
+<h2 id="names-names">Names (--names)</h2>
+<p>By default the file prefixes are used as trait names, to use custom trait names the user can 
+provide a list of names equal in length to the number of POP files, for example: </p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>./POPout.py trait1.pop trait2.pop --names traitA traitB  
+</code></pre></div>
+<h2 id="output-prefix-out">Output Prefix (--out)</h2>
+<p>The default output prefix is "out" but it can be changed as follows: </p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>./POPout.py trait1.pop trait2.pop --names traitA traitB  --out customOutput 
+</code></pre></div>
+<h2 id="plot-format-plotformat">Plot Format (--plotFormat)</h2>
+<p>The default format for plots is "pdf" but this can be changed to png as follows: </p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>./POPout.py trait1.pop trait2.pop --names traitA traitB  --out customOutput --plotFormat png 
+</code></pre></div>
+<h2 id="tail-size-tailsize">Tail Size (--tailSize)</h2>
+<p>By default POPout considers the lower and upper 1% as the trait tails.  This can be changed as follows*: </p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>./POPout.py trait1.pop trait2.pop --names traitA traitB  --out customOutput --plotFormat png --tailSize 5  
+</code></pre></div>
+<p>*Note that for this option, values between 1 and 25 are valid as are the values 0.5 (half a percent), 
+0.25 (a quarter percent), and 0.1 (a tenth of a percent).  </p>
               
             </div>
           </div><footer>

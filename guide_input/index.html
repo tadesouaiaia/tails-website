@@ -68,10 +68,6 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#pop-files">POP Files</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#file-specifications">File Specifications</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#creating-a-pop-file">Creating a POP File:</a>
-    </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../guide_output/">Output Data</a>
@@ -109,16 +105,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p><img alt="Screenshot" src="img/slim/guide_logo2.png" /> </p>
-<h1 id="input-data">Input Data</h1>
+                <h1 id="input-data">Input Data</h1>
 <h2 id="pop-files">POP Files</h2>
-<h2 id="file-specifications">File Specifications</h2>
-<p>A POP file is simple: </p>
+<p>The POP (PRS on Phenotype) file specification simply requires two columns of whitespace or comma-separated 
+data where the first column contains PRS values and the second the corresponding Phenotype values.  Note that the 
+header is optional for our Python scripts but required by R: </p>
 <table>
 <thead>
 <tr>
+<th style="text-align: center;">PRS</th>
 <th style="text-align: center;">Phenotype</th>
-<th style="text-align: center;">Prs</th>
 </tr>
 </thead>
 <tbody>
@@ -152,15 +148,14 @@
 </tr>
 </tbody>
 </table>
-<h2 id="creating-a-pop-file">Creating a POP File:</h2>
+<p>If you have PRS and Phenotype data with sample IDs in the first column then you can create a POP file 
+using our Python script as shown with example data: </p>
 <div class="admonition tip">
 <p class="admonition-title">Creating a POP File</p>
-<p>The following command will validate the command line data and create a target configuration file 
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>./POPout.py --createPopFile --prs data/prs.toy --pheno data/pheno.toy 
+<p>The following command will create POP file named my_file.pop. 
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>./POPout.py --makePOPfile data/TEST.prs data/TEST.pheno -o my_file
 </code></pre></div></p>
 </div>
-<p>This command will create a POPout File </p>
-<hr />
               
             </div>
           </div><footer>

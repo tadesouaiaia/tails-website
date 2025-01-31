@@ -57,6 +57,10 @@
               <ul class="current">
                   <li class="toctree-l1 current"><a class="reference internal current" href="./">Example Run</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#python3">Python3</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#r">R</a>
+    </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../quikstart_result/">Output Files</a>
@@ -104,20 +108,35 @@
             <div class="section" itemprop="articleBody">
               
                 <p><img alt="Screenshot" src="../img/pop_wide.jpg" /> </p>
-<p>POPout comes with example data for multiple toy traits: 
-<code>data/toy_height.pop</code>, <code>data/toy_bmi.pop</code>, <code>data/toy_wbc.pop</code>, and <code>data/toy_vol.pop</code>. </p>
-<p>Each toy data file is in "POP format" which is column or comma separated data where the 
+<h1 id="intro">Intro</h1>
+<p>POPout comes with example data for multiple toy traits.  Inside of the data directory you should see: </p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>    toy_bmi.pop    &lt;--- toy bmi data
+    toy_bp.pop     &lt;--- toy blood pressure data
+    toy_height.pop &lt;--- toy height data
+    toy_hg.pop     &lt;--- toy handgrip data
+    toy_vitD.pop   &lt;--- toy vitaminD data
+    TEST.pheno     &lt;--- Example Phenotype data
+    TEST.prs       &lt;--- Example PRS data
+</code></pre></div>
+<p>The toy data files are in "POP format" which is column or comma separated data where the 
 first column is the phenotype and the second column is the PRS values.  For more information 
 on POP format and help getting your own data into POP format please see 
-own data, see <a href="../guide_input/">Guide: Input Data</a>.</p>
-<h2 id="run-the-demo-using-python3">Run the demo using Python3:</h2>
-<p>To run the demo using Python3, please type: 
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>./POPout.py data/toy_height.pop data/toy_bmi.pop data/toy_weight.pop data/toy_height.pop
+<a href="../guide_input/">Guide: Input Data</a>.</p>
+<h2 id="python3">Python3</h2>
+<p>To run the demo on all the toy traits using Python, please type: 
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>./POPout.py -o test data/toy_bp.pop data/toy_vitD.pop data/toy_hg.pop data/toy_bmi.pop data/toy_height.pop
 </code></pre></div></p>
-<h2 id="results">Results:</h2>
-<p>If POPout runs successfully on the toy data, go to the next
-page for information on interpretation of the output result directories.</p>
-<p><img alt="Screenshot" src="../img/pop_wide.jpg" /> </p>
+<p>This will create three output files: </p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>    test-result.txt    &lt;--- POPout Results 
+    test-dists.pdf     &lt;--- Figure For POPout distributions 
+    test-effects.pdf   &lt;--- Figure showing POPout Effect Sizes
+</code></pre></div>
+<p>Please continue to the next page for interpretation of these results. </p>
+<h2 id="r">R</h2>
+<p>Alternatively, POPout can be run on a single POP-file using the following R script, which 
+will print directly to the terminal:  </p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Rscript --vanilla POPout.R data/toy_bp.pop &gt; test_result.txt
+</code></pre></div>
               
             </div>
           </div><footer>
