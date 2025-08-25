@@ -7,7 +7,7 @@
 ![Screenshot](img/POPOUT_LOGO_MAIN.jpg) 
 
 
-Pout is a software tool to apply the "PRS-on-Phenotype outlier" (POPout) test. The POPout test was developed to test for departures from common-variant 
+POPout is a software tool to apply the "PRS-on-Phenotype outlier" (POPout) test. The POPout test was developed to test for departures from common-variant 
 expectations in the tails of trait distributions. Users with PRS and quantitative trait data on a sample of individuals can use the POPout software here to 
 perform the POPout test on single or multiple traits and to produce output files that provide the results and figures for illustration.
 
@@ -43,9 +43,8 @@ To use the family-based STANDout test described in the manuscript please go to: 
 
 ## Contact 
 For questions about the methodology, this website, or our manuscript
-please contact [Dr Tade Souaiaia](mailto:tade.souaiaia@gmail.com), or [Dr Paul
-[Dr Clive Hoggart](http://www.pauloreilly.info/), [Dr
-O'Reilly](http://www.pauloreilly.info/).  For source code and coding
+please contact [Dr Tade Souaiaia](mailto:tade.souaiaia@gmail.com) or [Dr Paul
+O'Reilly](mailto:PaulOReilly@mssm.edu).  For source code and coding
 issues please visit the POPout github page [here](https://github.com/tadesouaiaia/POPOut). 
 
 
