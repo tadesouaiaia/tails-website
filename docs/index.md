@@ -7,11 +7,9 @@
 ![Screenshot](img/POPOUT_LOGO_MAIN.jpg) 
 
 
-
-
-POPout is a software package that allows users with PRS data to identify 
-and quantify the enrichment of large effects in one or both of the tails of the trait 
-distribution.
+Pout is a software tool to apply the "PRS-on-Phenotype outlier" (POPout) test. The POPout test was developed to test for departures from common-variant 
+expectations in the tails of trait distributions. Users with PRS and quantitative trait data on a sample of individuals can use the POPout software here to 
+perform the POPout test on single or multiple traits and to produce output files that provide the results and figures for illustration.
 
 
 
@@ -24,10 +22,6 @@ distribution.
 |<table> <tr><th> OS </th><th> Link </th><th> Last Updated  </th></tr>  <tr><td> Linux 64-Bit </td><td> [v0.0.3](https://github.com/tadesouaiaia/POPout/archive/refs/heads/main.zip) </td><td> 1-13-2025 </td></tr>  </th></tr>  <tr><td> Mac 64-Bit </td><td> [v0.0.3](https://github.com/tadesouaiaia/POPout/archive/refs/heads/main.zip) </td><td> 1-10-2025 </td></tr> </th></tr>  <tr><td> Windows </td><td> NA </td><td> Not Available </td></tr> </table>  
 
 
-
-!!! Note "Latest Updates"
-    # 2025-1-25 (v0.1.7)
-    - Created Website. 
 
 # Overview 
 
@@ -44,7 +38,7 @@ distribution.
 
     Souaiaia, Tade et al. “Striking Departures from Polygenic Architecture in the Tails of Complex Traits.” bioRxiv : the preprint server for biology 2024.11.18.624155. 20 Nov. 2024, doi:10.1101/2024.11.18.624155. Preprint.
 
-
+To use the family-based STANDout test described in the manuscript please go to: [www.sibarc.net](https://www.sibarc.net). 
 
 
 ## Contact 
